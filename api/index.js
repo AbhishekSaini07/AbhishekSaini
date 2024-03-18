@@ -5,7 +5,7 @@ app.get("/", (req, res) => res.send("Abhishek Saini (2110992269)"));
 app.post("/bfhl",(req,res)=>{
     const data = req.body.data;
   let user = {
-    "is-success": false,
+    "is-success": true,
     "user_id": "john_doe_17091999", 
     "email" : "john@xyz.com",
 "roll_number":"ABCD123",
@@ -13,6 +13,7 @@ app.post("/bfhl",(req,res)=>{
 "even_numbers": [],
 "alphabets": []
 };
+
 data.forEach(element => {
   if (!isNaN(element)) {
     // Check if the element is a number (using isNaN)
